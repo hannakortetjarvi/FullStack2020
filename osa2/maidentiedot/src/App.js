@@ -81,10 +81,10 @@ const App = () => {
     setInput(event.target.value)
   }
 
-  // Event-handler for showing chosen country's data
+  // Event-handler for showing chosen country's data by using chosen country's name as a filter
   const showCountryInfo = (event) => {
-		setInput(event.target.value)
-	}
+	setInput(event.target.value)
+  }
 
   return (
     <div>
