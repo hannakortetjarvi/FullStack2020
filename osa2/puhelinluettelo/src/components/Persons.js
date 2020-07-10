@@ -3,13 +3,7 @@ import React from 'react'
 /**
 * Renders person's information
 */
-const Content = ({person, deletePerson}) => {
-    return (
-      <li>
-        {person.name} {person.number} <button onClick={() => deletePerson(person)}>delete</button>
-      </li>
-    )
-  }
+const Content = ({person, deletePerson}) => <li>{person.name} {person.number} <button onClick={() => deletePerson(person)}>delete</button></li>
 
 /**
 * Filters persons and one by one renders them through Content-component
