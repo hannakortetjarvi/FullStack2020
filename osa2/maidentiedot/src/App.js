@@ -18,9 +18,9 @@ const WeatherInfo = ({country}) => {
   // Loading the weather information is successful -->
   return (
     <>
-      <p> <b>Temperature:</b> {weather.current.temperature} Celsius</p>
-      <img alt={`weathericon`} src={weather.current.weather_icons[0]} />
-			<p> <b>Wind:</b> {weather.current.wind_speed} kmph direction {weather.current.wind_dir} </p>
+	  <p> <b>Temperature:</b> {weather.current.temperature} Celsius</p>
+	  <img alt={`weathericon`} src={weather.current.weather_icons[0]} />
+	  <p> <b>Wind:</b> {weather.current.wind_speed} kmph direction {weather.current.wind_dir} </p>
     </>
   )
 }
