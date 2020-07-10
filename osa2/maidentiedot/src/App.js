@@ -77,14 +77,10 @@ const App = () => {
   useEffect(() => {axios.get(`https://restcountries.eu/rest/v2/all`).then(response => setCountries(response.data))}, [])
 
   // Event-handler for filtering the countries by user's input
-  const handleInput = (event) => {
-    setInput(event.target.value)
-  }
-
+  const handleInput = (event) => setInput(event.target.value)
+  
   // Event-handler for showing chosen country's data by using chosen country's name as a filter
-  const showCountryInfo = (event) => {
-	setInput(event.target.value)
-  }
+  const showCountryInfo = (event) => setInput(event.target.value)
 
   return (
     <div>
